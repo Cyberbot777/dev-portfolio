@@ -7,7 +7,7 @@ This portfolio showcases selected projects that demonstrate my capabilities in A
 
 ## About Me
 
-I develop AI-powered, full-stack web applications with a focus on clean architecture, security, and maintainability. My work spans a range of domains, including AI, automation, and Web3.
+I develop dynamic full-stack web applications with a focus on clean architecture, security, and maintainability. My work spans a range of domains, including AI, automation, and Web3.
 
 My core strengths include:
 - Full-stack engineering with React, TypeScript, FastAPI, and PostgreSQL
