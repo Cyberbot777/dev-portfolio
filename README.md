@@ -27,11 +27,6 @@ Deployed via Vercel.
 
 ---
 
-## Live Portfolio  
-[https://www.cyberbot777.com](https://www.cyberbot777.com)
-
----
-
 ## Featured Projects  
 The following projects are a sample of my broader portfolio:
 
