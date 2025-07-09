@@ -58,25 +58,24 @@ export default function Portfolio() {
           transition={{ duration: 1, delay: 0.8 }}
           className="max-w-6xl mx-auto px-6 my-12"
         >
-          <div className="flex justify-end">
-            <div className="grid md:grid-cols-2 gap-6 items-center pl-12 md:pl-14">
-              <div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center md:text-left">
-                  About Me
-                </h2>
-                <p className="text-lg text-gray-400 text-center md:text-left">
-                  Veteran, business owner, and former ER nurse turned full-stack
-                  developer. Skilled in building AI-integrated web applications
-                  with Python, React, and PostgreSQL.
-                </p>
-              </div>
-              <div className="flex justify-center">
-                <img
-                  src="/ProfileCLOSE_dark.jpg"
-                  alt="Richard Hall"
-                  className="rounded-full w-40 h-40 object-cover"
-                />
-              </div>
+          <div className="grid md:grid-cols-2 gap-6 items-center max-w-4xl mx-auto text-center md:text-left md:ml-28">
+
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center md:text-left">
+                About Me
+              </h2>
+              <p className="text-lg text-gray-400 text-center md:text-left">
+                Veteran, business owner, and former ER nurse turned full-stack
+                developer. Skilled in building AI-integrated web applications
+                with Python, React, and PostgreSQL.
+              </p>
+            </div>
+            <div className="flex justify-center">
+              <img
+                src="/ProfileCLOSE_dark.jpg"
+                alt="Richard Hall"
+                className="rounded-full w-40 h-40 object-cover"
+              />
             </div>
           </div>
         </motion.section>
@@ -161,3 +160,5 @@ export default function Portfolio() {
     </div>
   );
 }
+
+
