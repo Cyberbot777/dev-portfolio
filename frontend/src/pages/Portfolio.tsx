@@ -23,11 +23,10 @@ const projects = [
     demo: "https://prompt-pilot.ai",
   },
   {
-    title: "EtherScope",
-    description: `Full-stack Web3 wallet dashboard for Ethereum (Sepolia testnet). Connect your wallet to view ETH balance, transactions, and deposit events in a sleek dApp interface. Features a dark-themed UI, MetaMask + WalletConnect integration, and smart contract deposit tracking. Built with Solidity, Node.js, and React, and deployed on Vercel and Render.`,
-    tech: "Solidity, Hardhat, Node.js, Express, Ethers.js, React, Vite, Tailwind CSS, Wagmi, RainbowKit, Alchemy, Etherscan API, Vercel, Render",
-    github: "https://github.com/Cyberbot777/etherscope",
-    demo: "https://etherscope.vercel.app/",
+    title: "Recursive",
+    description: `Backend-only LLM agent that performs multi-pass prompt refinement using clarity scoring, semantic memory, and Chain-of-Thought decomposition. Built with FastAPI, PostgreSQL (pgvector), and OpenAI embeddings. Fully Dockerized with LangSmith trace validation and modular agent architecture.`,
+    tech: "Python, FastAPI, PostgreSQL, OpenAI API, pgvector, LangSmith, Docker, Chain-of-Thought",
+    github: "https://github.com/Cyberbot777/recursive",
   },
 ];
 
@@ -59,7 +58,6 @@ export default function Portfolio() {
           className="max-w-6xl mx-auto px-6 my-12"
         >
           <div className="grid md:grid-cols-2 gap-6 items-center max-w-4xl mx-auto text-center md:text-left md:ml-28">
-
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center md:text-left">
                 About Me
@@ -108,7 +106,13 @@ export default function Portfolio() {
                       {project.tech}
                     </p>
                   </div>
-                  <div className="flex justify-center space-x-4 mt-6">
+                  <div
+                    className={`flex mt-6 ${
+                      !project.demo
+                        ? "justify-center"
+                        : "justify-center space-x-4"
+                    }`}
+                  >
                     <a
                       href={project.github}
                       target="_blank"
@@ -117,14 +121,16 @@ export default function Portfolio() {
                     >
                       GitHub
                     </a>
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-6 py-2 border border-gray-600 rounded-full text-sm hover:bg-gray-700 transition"
-                    >
-                      Demo
-                    </a>
+                    {project.demo && (
+                      <a
+                        href={project.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-6 py-2 border border-gray-600 rounded-full text-sm hover:bg-gray-700 transition"
+                      >
+                        Demo
+                      </a>
+                    )}
                   </div>
                 </div>
               ))}
@@ -160,5 +166,3 @@ export default function Portfolio() {
     </div>
   );
 }
-
-
