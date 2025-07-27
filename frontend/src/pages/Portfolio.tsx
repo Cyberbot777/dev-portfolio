@@ -2,6 +2,19 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
+    title: "Recursive",
+    description: `A modular agentic LLM system that self-improves prompts through multi-pass scoring, memory recall, and structured CoT transformation. Backend-only architecture with clarity scoring, semantic vector memory (pgvector), and Chain-of-Thought decomposition. Built with FastAPI, Docker, and OpenAI embeddings. LangSmith validated.`,
+    tech: "Python, FastAPI, PostgreSQL, OpenAI API, pgvector, LangSmith, Docker, Chain-of-Thought",
+    github: "https://github.com/Cyberbot777/recursive",
+  },
+  {
+    title: "PromptPilot",
+    description: `Full-stack AI prompt testing platform with a dual-pane interface for editing system instructions and testing GPT and Claude responses in real-time. Features animated output, Markdown rendering, model toggle, export/import for .json/.md/.txt files, and secure multi-model API proxying via FastAPI backend.`,
+    tech: "React, TypeScript, FastAPI, PostgreSQL, OpenAI API, Claude API, Tailwind CSS, Framer Motion, Render, Vercel",
+    github: "https://github.com/Cyberbot777/prompt-pilot",
+    demo: "https://prompt-pilot.ai",
+  },
+  {
     title: "Nightingale",
     description: `Full-stack journaling app with GPT 3.5 Turbo AI integrated feedback, JWT-secured CRUD, and PostgreSQL backend. Built with React, FastAPI, and Tailwind. Includes mobile optimization, dark-mode UI, and email-based password reset via SendGrid. Deployed on Vercel and Render. Demo login: demo@nightingale.ai | demo123!`,
     tech: "React, Python, FastAPI, PostgreSQL, OpenAI API, Tailwind CSS, JWT, SendGrid, Vercel, Render",
@@ -15,20 +28,8 @@ const projects = [
     github: "https://github.com/Cyberbot777/nightingale",
     demo: "https://chatgpt.com/g/g-6844bc07cb148191b8afa39dde1a1a91-nightingale-your-journal-companion",
   },
-  {
-    title: "PromptPilot",
-    description: `Full-stack AI prompt testing platform with a dual-pane interface for editing system instructions and testing GPT and Claude responses in real-time. Features animated output, Markdown rendering, model toggle, export/import for .json/.md/.txt files, and secure multi-model API proxying via FastAPI backend.`,
-    tech: "React, TypeScript, FastAPI, PostgreSQL, OpenAI API, Claude API, Tailwind CSS, Framer Motion, Render, Vercel",
-    github: "https://github.com/Cyberbot777/prompt-pilot",
-    demo: "https://prompt-pilot.ai",
-  },
-  {
-    title: "Recursive",
-    description: `Backend-only LLM agent that performs multi-pass prompt refinement using clarity scoring, semantic memory, and Chain-of-Thought decomposition. Built with FastAPI, PostgreSQL (pgvector), and OpenAI embeddings. Fully Dockerized with LangSmith trace validation and modular agent architecture.`,
-    tech: "Python, FastAPI, PostgreSQL, OpenAI API, pgvector, LangSmith, Docker, Chain-of-Thought",
-    github: "https://github.com/Cyberbot777/recursive",
-  },
 ];
+
 
 export default function Portfolio() {
   return (
